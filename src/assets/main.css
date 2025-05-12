@@ -1,0 +1,78 @@
+@import './base.css';
+
+#app {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+
+.trending {
+  height: 550px;
+  overflow-y: auto;
+  width: 450px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.trending-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.trending-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.ranking {
+  font-weight: bold;
+  color: #f56c6c;
+  margin-right: 10px;
+}
+
+.topic {
+  flex: 1;
+  color: #333;
+}
+
+.topic:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
